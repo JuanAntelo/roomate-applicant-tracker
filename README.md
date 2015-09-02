@@ -3,3 +3,5 @@ Inspired by the current situation I'm facing, building an app to keep track of a
 
 Frontend - AngularJS
 Backend - NodeJS
+
+Link to this application running coming soon!!
