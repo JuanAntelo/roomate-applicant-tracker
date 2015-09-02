@@ -3,9 +3,9 @@ var app = express();
 
 app.use(express.static(__dirname + '/public'));
 
-var server = app.listen(3000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
+var port = process.env.PORT || 3000;
 
-  console.log('Example app listening at http://%s:%s', host, port);
+var server = app.listen(port, function () {
+  var host = server.address().address;
+  console.log('Example app listening at http://%s:%s', host, server.address().port);
 });
