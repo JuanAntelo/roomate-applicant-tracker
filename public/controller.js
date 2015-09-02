@@ -43,6 +43,25 @@ angular.module('roomateApplicantTracker', ['highcharts-ng'])
         loading: false
     }
 
+            $scope.highchartslineNG = {
+        options: {
+            chart: {
+                type: 'line',
+                height: 200
+            }
+        },
+        series: [{
+        	name : "Starting 5",
+            data: [{name: "personA", y: 10}, 
+                     {name: "personB",  y: 15}, 
+                     12, 8, 7]
+        }],
+        title: {
+            text: 'Hello'
+        },
+        loading: false
+    }
+
 }])
 .directive('dashboard', function() {
   return {
