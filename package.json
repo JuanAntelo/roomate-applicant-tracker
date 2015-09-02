@@ -1,0 +1,24 @@
+{
+  "name": "roomate-applicant-tracker",
+  "version": "1.0.0",
+  "description": "Keeping track o all the roomates that are applying to a given apartment",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JuanAntelo/roomate-applicant-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanAntelo/roomate-applicant-tracker/issues"
+  },
+  "homepage": "https://github.com/JuanAntelo/roomate-applicant-tracker"
+}
