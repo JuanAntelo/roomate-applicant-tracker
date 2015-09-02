@@ -1,14 +1,51 @@
-angular.module('roomateApplicantTracker', [])
+angular.module('roomateApplicantTracker', ['highcharts-ng'])
 
-.controller('tableController',['$scope',function($scope) {
+.controller('tableController',['$scope','highchartsNG',function($scope, highchartsNG) {
     $scope.count = 3;
     $scope.customer = {
     	address: "165 Norwood Ave"
     }
+
+    $scope.highchartspieNG = {
+        options: {
+            chart: {
+                type: 'pie',
+                height: 200
+            }
+        },
+        series: [{
+        	name : "Starting 5",
+            data: [{name: "personA", y: 10}, 
+                     {name: "personB",  y: 15}, 
+                     12, 8, 7]
+        }],
+        title: {
+            text: 'Hello'
+        },
+        loading: false
+    }
+        $scope.highchartsbarNG = {
+        options: {
+            chart: {
+                type: 'bar',
+                height: 200
+            }
+        },
+        series: [{
+        	name : "Starting 5",
+            data: [{name: "personA", y: 10}, 
+                     {name: "personB",  y: 15}, 
+                     12, 8, 7]
+        }],
+        title: {
+            text: 'Hello'
+        },
+        loading: false
+    }
+
 }])
-.directive('myCustomer', function() {
+.directive('dashboard', function() {
   return {
-    //template: 'Name: {{count}} Address: {{customer.address}}'
-    templateUrl : 'test.html'
+    templateUrl : 'dashboard.html'
   };
 });

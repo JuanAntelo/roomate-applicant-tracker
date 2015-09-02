@@ -1,0 +1,39 @@
+<div class="dashboard">
+<!-- <div>Name: {{count}} Address: {{customer.address}}</div> -->
+	<div class="section">
+		<div class="inner">
+		        <highchart id="chart1" config="highchartspieNG"></highchart>
+		</div>
+	</div>
+	<div class="section">
+		<div class="inner">
+		ok
+		</div>
+	</div>
+	<div class="section">
+		<div class="inner">
+		        <highchart id="chart3" config="highchartsbarNG"></highchart>
+		</div>
+	</div>
+
+</div>
+<style>
+	.dashboard > .section {
+		display: inline-block;
+    		width: 33%;
+		background-color: #eee
+	}
+	.inner {
+		margin: 2.5%;
+		background-color: white;
+		height: 200px;
+	}
+
+	@media(max-width : 812px) {
+   		 .dashboard > .section {
+   		 	width: 100%;
+   		 	display: block;
+   		 	margin: 0 auto;
+    		}
+	}
+</style>

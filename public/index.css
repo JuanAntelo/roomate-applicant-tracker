@@ -2,3 +2,15 @@
 h2 { text-align: center; margin-top: 100px; }
 div { text-align: center; } 
 ul { list-style-type: none;}
+@media (max-width : 1500px) and (min-width : 1010px)  {
+    #container {
+	margin-left: 10%;
+	margin-right: 10%;
+    }
+}
+@media(min-width : 1500px) {
+    #container {
+	margin-left: 12%;
+	margin-right: 12%;
+    }
+}
