@@ -20,7 +20,7 @@ angular.module('roomateApplicantTracker', ['highcharts-ng'])
                      12, 8, 7]
         }],
         title: {
-            text: 'Hello'
+            text: 'Apt Interest'
         },
         loading: false
     }
@@ -38,7 +38,7 @@ angular.module('roomateApplicantTracker', ['highcharts-ng'])
                      12, 8, 7]
         }],
         title: {
-            text: 'Hello'
+            text: 'Work Background'
         },
         loading: false
     }
@@ -57,7 +57,7 @@ angular.module('roomateApplicantTracker', ['highcharts-ng'])
                      12, 8, 7]
         }],
         title: {
-            text: 'Hello'
+            text: 'Number of Applicants'
         },
         loading: false
     }
